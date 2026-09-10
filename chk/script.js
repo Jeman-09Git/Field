@@ -1,7 +1,19 @@
 function Change2(){
     reset();
-     document.body.style.backgroundColor="red"; 
+     document.body.style.backgroundColor= "rgb(246, 64, 76)"; 
      document.body.style.color="white";
+      const links = document.querySelectorAll(".link");
+    links.forEach( a => {
+        a.style.color= "red";
+    });
+    const bar = document.getElementById('bar');
+    bar.style.backgroundColor= "pink";
+    const div=document.getElementById('div1');
+    div.style.backgroundColor= "white";
+    div.style.color= "black";
+    const par = document.getElementById('par');
+    par.style.backgroundColor= "rgb(246, 64, 76)";
+    par.style.color= "white";
 
 }
 function None(){
@@ -27,6 +39,17 @@ function Change4(){
     headings.forEach( h1 => {
         h1.style.color= "lightgreen";
     });
+     const links = document.querySelectorAll(".link");
+    links.forEach( a => {
+        a.style.color= "white";
+    });
+     const link = document.querySelectorAll(".link2");
+    link.forEach( a => {
+        a.style.color= "green";
+        a.style.transitionBehavior= "white 0.3s ease";
+    });
+
+
     document.body.style.fontFamily= "Courier New, Courier, monospace";
     const bar = document.getElementById('bar');
     bar.style.width= "300px";
@@ -37,7 +60,8 @@ function Change4(){
     bar.style.top= "10px";
     bar.style.right= "50%";
     bar.style.position= "fixed";
-    document.getElementById('list').style.transition= "0.3s ease";
+    document.getElementById('list').style.transitionBehavior= "ease";
+    document.getElementById('list').style.transitionDuration= "0.5s";
 } 
  
 function Change3(){
@@ -55,13 +79,30 @@ function Change3(){
     document.getElementById('bar').style.width= "900px";
     document.getElementById('par').style.fontSize= "10px"
     document.getElementById('bar').style.height= "130px";
+    document.getElementById('par').style.textAlign= "center";
      const bar = document.getElementById('bar');
     bar.style.border= "none";
     bar.style.float= "none";
+
 }
 
 function Change(){
 reset();
+document.body.style.fontFamily= "Courier New, Courier, monospace";
+ const head=document.getElementById('head');
+    head.style.backgroundColor= "green";
+    head.style.color= "white";
+
+    const bar = document.getElementById('bar');
+    bar.style.width= "300px";
+    bar.style.float= "right";
+    bar.style.padding= "10px";
+    bar.style.color= "white";
+    bar.style.border= "2px solid white";;
+    bar.style.right= "50%";
+    bar.style.position= "fixed";
+    bar.style.backgroundColor= "aqua";
+    bar.style.height= "33%";
 
 }
 function reset(){
@@ -78,4 +119,29 @@ function reset(){
     bar.style.height= "";
     bar.style.margin= "";
     bar.style.backgroundColor= "";
+    document.getElementById('par').style.fontSize= "";
+     document.getElementById('par').style.textAlign= "";
+      const links = document.querySelectorAll(".link");
+    links.forEach( a => {
+        a.style.color= "";
+    });
+     const link = document.querySelectorAll(".link2");
+    link.forEach( a => {
+        a.style.color= "";
+        a.style.transitionBehavior= "";
+    });
+ const div=document.getElementById('div1');
+    div.style.backgroundColor= "";
+    div.style.color= "";
+    const headings = document.querySelectorAll(".he1");
+    headings.forEach( h1 => {
+        h1.style.color= "";
+    });
+ document.getElementById('side').style.color= "";
+ const par = document.getElementById('par');
+    par.style.backgroundColor= "";
+    par.style.color= "";
+
+
+
 }

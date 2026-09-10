@@ -1,4 +1,7 @@
-#s2 body{
-background-color: red;
-color: white;
+.link2{
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+.link2:hover {
+    color: white;
 }
