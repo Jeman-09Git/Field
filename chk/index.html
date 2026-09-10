@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            text-align: center;
+            background-color: antiquewhite;
+            color: black; 
+        }
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+        input[type="number"] {
+            padding: 5px;
+            width: 200px;
+        }
+        </style>
+</head>
+<body>
+    <script>
+        function validateAge() {
+        let text;
+        let age = document.getElementById("numberInput").value;
+        if (isNaN(age) || age < 0 || age > 120) {
+            text = "Input not valid";
+            }
+            if (age < 18) {
+                text = "You are too young to drive a car";
+        } else if(age >= 75){
+            text = "You are too old to drive a car";
+
+        }
+        else{
+            text = "You are old enough to drive a car";
+        }
+        result.innerHTML = text;
+        }
+    </script>
+    <label for="numberInput">Age:</label>
+   <input type="number" id="numberInput" placeholder="Enter an age" min="0" max="120">
+   <button onclick="validateAge()">Check</button>
+    <p id="result"></p>
+</body>
+</html>
